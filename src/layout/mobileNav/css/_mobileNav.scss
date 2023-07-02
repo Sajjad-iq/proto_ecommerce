@@ -1,0 +1,9 @@
+@use '../../../sass/abstracts' as a;
+
+.mobile-nav {
+    height: 100dvh;
+    background-color: a.$MidBlack ;
+    z-index: 15;
+    padding-top: 15px;
+    overflow: hidden;
+}

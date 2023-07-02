@@ -1,0 +1,74 @@
+@use '../../../sass/abstracts' as a;
+
+
+.nav-icons-button p {
+    position: absolute;
+    top: 2px;
+    right: 1px;
+    background-color: a.$fuschia;
+    border-radius: 8px;
+    font-size: 0.4rem;
+    color: a.$White;
+    padding: 2px 4px;
+}
+
+.arrow-down {
+    width: 10px;
+    height: 10px;
+    margin: 0;
+}
+
+.cart-button-window-wrapper {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: -260px;
+    right: -30px;
+    background: a.$White;
+    padding: 0px 10px 10px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        right: 48px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid a.$White;
+    }
+}
+
+.cart-button-window-wrapper .cart-window-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid a.$lightGray ;
+    padding: 10px 0;
+}
+
+.cart-button-window-wrapper .cart-window-header a,
+.cart-button-window-wrapper .cart-window-header p {
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: a.$Black;
+    cursor: pointer;
+}
+
+.cart-button-window-wrapper p {
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: a.$Black;
+    text-align: center;
+}
+
+/* query */

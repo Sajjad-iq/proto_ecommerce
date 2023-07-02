@@ -1,0 +1,101 @@
+@use '../../../sass/abstracts' as a;
+
+.search-field-main-wrapper {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.search-field-main-wrapper .search-field-window-wrapper {
+    width: 275px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: a.$Dark-Gray ;
+    position: absolute;
+    bottom: -50px;
+    right: -20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        right: 35px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid a.$Dark-Gray;
+    }
+}
+
+.search-field-main-wrapper .search-field-window-wrapper .secondary-wrapper {
+    width: 100%;
+    padding: 0 5px;
+    border-radius: 16px;
+    background-color: a.$lightGray ;
+    display: flex;
+}
+
+.search-field-main-wrapper .search-field-window-wrapper .secondary-wrapper input {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0 10px;
+    color: a.$LightBlack ;
+    font-size: 0.9rem;
+    font-weight: 400;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        font-weight: 300;
+        font-size: 0.8rem;
+        color: a.$Dark-Gray ;
+    }
+
+
+}
+
+.right-side {
+    display: flex;
+}
+
+.right-side button {
+    border: none;
+    background: none;
+}
+
+.right-side .search-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+.right-side #search-options {
+    border: none;
+    background: none;
+    font-size: 0.7rem;
+    color: a.$LightBlack ;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.right-side .options-wrapper {
+    padding: 4px 3px;
+    border-left: 1px solid a.$Dark-Gray;
+    border-right: 1px solid a.$Dark-Gray;
+}
+
+.options-wrapper option {
+    font-size: 0.8rem;
+    color: a.$LightBlack ;
+}
+
+/* query */
