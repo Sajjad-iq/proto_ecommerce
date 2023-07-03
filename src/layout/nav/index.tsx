@@ -1,12 +1,14 @@
 import logo from '../../assets/brand/logo_white_new.png'
 import { NavIconsButtons } from '../../common/NavIconsButtons'
 import { MenuButton } from './components/MenuButton'
+import { NormalNavButton } from './components/NormalNavButton'
 
 interface Props {
     setIsActive: any
     isActive: boolean
 }
 export const Nav = (props: Props) => {
+
 
     return (
         <nav className="nav" dir={"ltr"}>
@@ -15,7 +17,10 @@ export const Nav = (props: Props) => {
                 <img className='logo' src={logo} alt="logo" />
             </section>
 
-            <NavIconsButtons />
+            <section className='flex'>
+                <NormalNavButton />
+                <NavIconsButtons />
+            </section>
         </nav>
     )
 }

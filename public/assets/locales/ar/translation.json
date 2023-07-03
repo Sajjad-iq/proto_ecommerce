@@ -7,5 +7,10 @@
   "nav_Shopping_Cart": "سلة التسوق",
   "nav_Checkout": "التحقق من الطلب",
   "nav_My_Account": "حسابي",
-  "search": "بحث"
+  "cart_empty": ".لاتوجد مشتريات في السلة حاليا",
+  "cart_view_cart": "معاينة المشتريات",
+  "cart_items": "اداة",
+  "search": "..بحث",
+  "search_options_all_catagories": "كل الأقسام",
+  "search_options_electronics": "الألكترونيات"
 }

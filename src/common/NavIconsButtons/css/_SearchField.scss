@@ -9,13 +9,13 @@
 
 
 .search-field-main-wrapper .search-field-window-wrapper {
-    width: 275px;
+    width: 400px;
     padding: 5px;
     border-radius: 20px;
     background-color: a.$Dark-Gray ;
     position: absolute;
-    bottom: -50px;
-    right: -20px;
+    bottom: -55px;
+    right: -25px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     &:after {
@@ -34,7 +34,7 @@
 .search-field-main-wrapper .search-field-window-wrapper .secondary-wrapper {
     width: 100%;
     padding: 0 5px;
-    border-radius: 16px;
+    border-radius: 1rem;
     background-color: a.$lightGray ;
     display: flex;
 }
@@ -45,7 +45,7 @@
     border: none;
     padding: 0 10px;
     color: a.$LightBlack ;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 400;
 
     &:focus {
@@ -54,7 +54,7 @@
 
     &::placeholder {
         font-weight: 300;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         color: a.$Dark-Gray ;
     }
 
@@ -71,15 +71,15 @@
 }
 
 .right-side .search-icon {
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
+    width: 1.35rem;
+    height: 1.35rem;
+    margin: 0 1rem;
 }
 
 .right-side #search-options {
     border: none;
     background: none;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     color: a.$LightBlack ;
 
     &:focus {

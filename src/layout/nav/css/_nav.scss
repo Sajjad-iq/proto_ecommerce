@@ -109,3 +109,23 @@
 
 
 /* query */
+
+@include a.tablet {
+    .nav {
+        padding: 10px 20px;
+    }
+}
+
+@include a.laptop {
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        width: 85px;
+        height: 35px;
+        margin-left: 5px;
+    }
+
+
+}

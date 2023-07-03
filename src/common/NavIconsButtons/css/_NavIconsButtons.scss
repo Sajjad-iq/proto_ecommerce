@@ -1,8 +1,10 @@
+@use '../../../sass/abstracts' as a;
+
 .nav-icons-buttons {}
 
 .nav-icons-buttons-image {
-    width: 38px;
-    height: 38px;
+    width: 35px;
+    height: 35px;
     color: white;
 }
 
@@ -13,6 +15,13 @@
     position: relative;
 }
 
+
+@include a.laptop {
+    .nav-icons-buttons-image {
+        width: 30px;
+        height: 30px;
+    }
+}
 
 
 /* query */

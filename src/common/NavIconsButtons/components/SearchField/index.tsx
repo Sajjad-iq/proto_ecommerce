@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 import SearchIcon from '../../../../assets/svg/magnifying-glass-svgrepo-com.svg'
 import BlackSearchIcon from '../../../../assets/svg/search.svg'
-import { languages } from '../../../../layout/Utils'
-import Cookies from 'js-cookie'
+import { useTranslation } from 'react-i18next'
 
 export const SearchField = () => {
     const [isActive, setIsActive] = useState(false)
     const WindowRef = useRef<any>(null)
+    const { t } = useTranslation()
 
     useEffect(() => {
 
@@ -25,16 +25,16 @@ export const SearchField = () => {
                 <img src={SearchIcon} alt='search icon' className='nav-icons-buttons-image' />
             </button>
 
-            <section ref={WindowRef} className={`search-field-window-wrapper ${isActive ? `` : `none`}`}>
+            <section ref={WindowRef} className={`search-field-window-wrapper absolute ${isActive ? `` : `none`}`}>
                 <section className='secondary-wrapper'>
 
-                    <input type='text' placeholder='Search...' />
+                    <input type='text' placeholder={t("search")} />
 
                     <section className='right-side'>
                         <section className='options-wrapper'>
                             <select id="search-options" onChange={(e) => ""} >
-                                <option value="AllCatagories">All Catagories</option>
-                                <option value="electronics">Electronics</option>
+                                <option value="AllCatagories">{t("search_options_all_catagories")}</option>
+                                <option value="electronics">{t("search_options_electronics")}</option>
                             </select>
                         </section>
 

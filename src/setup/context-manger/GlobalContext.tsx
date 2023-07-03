@@ -10,9 +10,10 @@ const GlobalContextProvider = ({ children }: ProviderChildrenType) => {
 
     const [IsWishListActive, setIsWishListActive] = useState(false)
     const [SelectedCurrency, setSelectedCurrency] = useState('USD')
+    const [CartItems, setCartItems] = useState([])
 
     return (
-        <GlobalContext.Provider value={{ IsWishListActive, setIsWishListActive, SelectedCurrency, setSelectedCurrency }}>
+        <GlobalContext.Provider value={{ IsWishListActive, setIsWishListActive, SelectedCurrency, setSelectedCurrency, CartItems, setCartItems }}>
             {children}
         </GlobalContext.Provider>
     )

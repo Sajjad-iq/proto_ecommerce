@@ -1,0 +1,16 @@
+@use '../../../sass/abstracts' as a;
+
+.hover-drop-window {
+    &:after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 12px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid a.$White;
+        z-index: 40;
+    }
+}

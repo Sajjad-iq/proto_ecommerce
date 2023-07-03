@@ -14,13 +14,12 @@ export const NavIconsButtons = () => {
 
     return (
 
-        window.innerWidth <= 768 ?
+        window.innerWidth <= 760 ?
             < section className='flex-row nav-icons-buttons ' >
-                <CartButton />
-
                 <button onClick={() => setIsWishListActive((e: any) => e = !e)} className='nav-icons-button'>
                     <img src={HeartIcon} alt='wish list icon' className='nav-icons-buttons-image' />
                 </button>
+                <CartButton />
 
             </section>
 
