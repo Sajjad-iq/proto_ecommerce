@@ -14,7 +14,15 @@ export const LangChange = (props: Props) => {
     const currentLanguage = languages.find((l) => l.code === currentLanguageCode)
     const { t } = useTranslation()
 
-    useEffect(() => { document.body.dir = currentLanguage?.dir || 'ltr' }, [currentLanguage, t])
+    useEffect(() => {
+        let elements = document.querySelectorAll("#reverse-dir")
+        document.body.dir = currentLanguage?.dir || 'ltr'
+        if (elements) {
+            elements.forEach((e: any) => {
+                e.dir = currentLanguage?.dir || 'ltr'
+            })
+        }
+    }, [currentLanguage, t])
 
     return (
         <DropDownButton SelectedName={currentLanguageCode === "en" ? 'EN' : "عربي"}>

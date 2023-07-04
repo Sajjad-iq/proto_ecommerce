@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Nav } from './layout/nav'
 import { MobileNav } from './layout/mobileNav'
 import { ContentSide } from './layout/ContentSide'
+import { Home } from './pages/home'
 function App() {
   const [menuActive, setIsMenuActive] = useState(false)
 
@@ -12,7 +13,7 @@ function App() {
       <MobileNav setIsActive={setIsMenuActive} isActive={menuActive} />
 
       <ContentSide isActive={menuActive}>
-        <h1>content</h1>
+        <Home />
       </ContentSide>
     </section>
   )

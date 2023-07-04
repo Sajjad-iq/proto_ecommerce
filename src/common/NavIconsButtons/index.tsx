@@ -16,9 +16,7 @@ export const NavIconsButtons = () => {
 
         window.innerWidth <= 760 ?
             < section className='flex-row nav-icons-buttons ' >
-                <button onClick={() => setIsWishListActive((e: any) => e = !e)} className='nav-icons-button'>
-                    <img src={HeartIcon} alt='wish list icon' className='nav-icons-buttons-image' />
-                </button>
+
                 <CartButton />
 
             </section>
@@ -26,10 +24,10 @@ export const NavIconsButtons = () => {
             :
 
             < section className='flex-row nav-icons-buttons' >
+
                 <Link className='nav-icons-button' to={"/Profile"}>
                     <img src={UserIcon} alt='user icon' className='nav-icons-buttons-image' />
                 </Link>
-
                 <button onClick={() => setIsWishListActive((e: any) => e = !e)} className='nav-icons-button'>
                     <img src={HeartIcon} alt='wish list icon' className='nav-icons-buttons-image' />
                 </button>

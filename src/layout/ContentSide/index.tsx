@@ -11,7 +11,7 @@ export const ContentSide = (props: Props) => {
 
     return (
         <motion.section
-            className='content-side flex-row'
+            className='content-side'
             animate={{
                 width: !props.isActive ? window.innerWidth : Width
             }}

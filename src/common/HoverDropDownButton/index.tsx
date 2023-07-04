@@ -24,8 +24,8 @@ export const HoverDropDownButton = (props: Props) => {
     return (
         <section ref={WindowRef} onClick={() => setIsActive(!isActive)} className='flex-col relative'>
 
-            <section className='flex justify-between items-center m-3'>
-                <p className='text-sm white mr-2'>{props.SelectedName}</p>
+            <section className='flex justify-between items-center m-3' id='reverse-dir'>
+                <p className='text-sm white mx-2'>{props.SelectedName}</p>
                 <img src={ArrowDown} alt='Arrow Down' className='arrow-down ' />
             </section>
 

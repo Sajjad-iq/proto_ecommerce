@@ -13,7 +13,15 @@ export const NormalNavButton = () => {
     const { t } = useTranslation()
     const { SelectedCurrency, setSelectedCurrency } = useContext(GlobalContext)
 
-    useEffect(() => { document.body.dir = currentLanguage?.dir || 'ltr' }, [currentLanguage, t])
+    useEffect(() => {
+        let elements = document.querySelectorAll("#reverse-dir")
+        document.body.dir = currentLanguage?.dir || 'ltr'
+        if (elements) {
+            elements.forEach((e: any) => {
+                e.dir = currentLanguage?.dir || 'ltr'
+            })
+        }
+    }, [currentLanguage, t])
 
     return (
         <section className='hidden lg:flex mr-6'>
@@ -23,10 +31,9 @@ export const NormalNavButton = () => {
                 })}
             </HoverDropDownButton>
 
-
             <HoverDropDownButton SelectedName={currentLanguageCode === "en" ? 'EN' : "عربي"}>
                 {languages.map((e: any) => {
-                    return <li className='text-sm  h-10 flex flex-col justify-center px-6' style={{}} key={e.name} onClick={() => i18next.changeLanguage(e.code)}>{currentLanguageCode === "en" ? e.name : e.arName}</li>
+                    return <li className='text-sm  h-10 flex flex-col justify-center px-6' key={e.name} onClick={() => i18next.changeLanguage(e.code)}>{currentLanguageCode === "en" ? e.name : e.arName}</li>
                 })}
             </HoverDropDownButton>
 

@@ -12,5 +12,11 @@
   "cart_items": "ITEM(S)",
   "search": "Search..",
   "search_options_all_catagories": "All Catagories",
-  "search_options_electronics": "Electronics"
+  "search_options_electronics": "Electronics",
+  "home_banner_header": "Spring / Summer Season",
+  "home_banner_up": "up",
+  "home_banner_to": "to",
+  "home_banner_50%off": "50 % OFF",
+  "home_banner_startingAt": "STARTING AT",
+  "home_banner_shop_now": "SHOP NOW"
 }
