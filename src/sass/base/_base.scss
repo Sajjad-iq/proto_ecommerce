@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    user-select: none;
 }
 
 input {
@@ -14,11 +15,14 @@ input {
 body {
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
+    width: 100dvw;
 }
 
 .App {
     position: relative;
     display: flex;
+    width: 100dvw;
+    overflow: hidden;
 }
 
 .none {
@@ -27,4 +31,13 @@ body {
 
 .NavBorder {
     border-bottom: 1px solid #111111b4;
+}
+
+
+.full-h {
+    height: 100dvh;
+}
+
+.full-w {
+    width: 100dvw;
 }

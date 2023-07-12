@@ -1,9 +1,10 @@
 import Slider from "../../utils/lib";
 import { FirstPage } from "./components/FirstPage";
+import { SecondPage } from "./components/secoundPage";
 
 export const Home = () => {
     return (
-        <section dir="ltr" className="w-full h-3/6">
+        <section dir="ltr" className="full-w full-h ">
             <Slider
                 onSlideComplete={(i) => {
                     console.log('finished dragging, current slide is', i)
@@ -14,7 +15,7 @@ export const Home = () => {
                 transition={0.5}
             >
                 <FirstPage key={1} />
-                <FirstPage key={2} />
+                <SecondPage key={2} />
             </Slider>
         </section>
 

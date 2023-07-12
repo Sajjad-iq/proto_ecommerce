@@ -1,32 +1,36 @@
-import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
-export const BannerText = () => {
+interface Props {
+    pageIndex: Number
+}
+export const BannerText = (props: Props) => {
 
     const { t } = useTranslation()
 
     return (
-        <section id='reverse-dir' className='flex flex-col w-fit'>
-            <article className='white w-fit text-2xl' >{t("home_banner_header")}</article>
+        <section id='reverse-dir' className={`${props.pageIndex === 0 ? `banner-text` : `second-banner-text`} `}>
+            <article className='white text-2xl my-1 text-center md:text-4xl lg:w-fit lg:text-3xl' >{t("home_banner_header")}</article>
 
-            <article className='white flex-row w-fit' >
-                <div className=' flex flex-col font-semibold'>
-                    <p className='flex text-xl'>{t("home_banner_up")}</p>
-                    <p className='flex text-xl'>{t("home_banner_to")}</p>
+            <article className='white flex-row my-2 lg:justify-start' >
+                <div className=' flex flex-col font-extrabold text-2xl md:text-4xl lg:text-3xl'>
+                    <p>{t("home_banner_up")}</p>
+                    <p>{t("home_banner_to")}</p>
                 </div>
-                <strong className='text-6xl mx-2'>{t("home_banner_50%off")}</strong>
+                <strong className='text-6xl mx-2 md:text-8xl lg:text-7xl'>{t("home_banner_50%off")}</strong>
             </article>
 
-            <section className='flex flex-row white w-fit'>
-                <article className='flex flex-row white w-fit'>
-                    <p>{t("home_banner_startingAt")}</p>
-                    <p className='orange'>$<strong>19</strong>99</p>
+            <section className='items-center justify-center flex-wrap flex flex-col white my-1 text-base lg:justify-start lg:flex-row'>
+                <article className='flex white h-fit w-fit'>
+                    <p className='font-bold md:text-2xl lg:text-base'>{t("home_banner_startingAt")}</p>
+
+                    <p dir='ltr' className='orange mx-1 flex items-start font-semibold md:text-2xl lg:text-base'  >
+                        $<strong className='text-2xl md:text-3xl lg:text-lg'>19</strong>99
+                    </p>
                 </article>
-                <button className='px-7 py-5 mx-4 bg-slate-200 '
-                >{t("home_banner_shop_now")}</button>
+                <Link to={"/"} className='w-40 h-14 mt-2 bg-slate-50 black font-bold flex-row hover:bg-slate-200  duration-300 md:text-lg md:mt-4 lg:mt-0 lg:mx-2 lg:text-base lg:w-32'
+                >{t("home_banner_shop_now")}</Link>
             </section>
-
-
         </section>
     )
 }

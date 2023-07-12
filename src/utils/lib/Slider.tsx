@@ -196,7 +196,7 @@ function Slider({
     <div
       style={{
         overflow: 'hidden',
-        width: '100%',
+        width: '100dvw',
         height: '100%',
         maxHeight: '100vh',
       }}
@@ -206,7 +206,7 @@ function Slider({
         ref={sliderRef}
         style={{
           all: 'initial',
-          width: '100%',
+          width: '100dvw',
           height: '100%',
           maxHeight: '100vh',
           display: 'inline-flex',
