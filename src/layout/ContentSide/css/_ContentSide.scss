@@ -1,12 +1,9 @@
 .content-side {
     width: 100%;
-    background: palegoldenrod;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 61px;
-    overflow: scroll;
+    background: black;
+    max-height: 100dvh;
+    flex-direction: column;
+    overflow-y: scroll;
 }
 
 /* query */

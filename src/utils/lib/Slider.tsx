@@ -197,8 +197,8 @@ function Slider({
       style={{
         overflow: 'hidden',
         width: '100dvw',
-        height: '100%',
-        maxHeight: '100vh',
+        height: '100dvh',
+        maxHeight: '100dvh',
       }}
     >
       <div
@@ -207,8 +207,8 @@ function Slider({
         style={{
           all: 'initial',
           width: '100dvw',
-          height: '100%',
-          maxHeight: '100vh',
+          height: '100dvh',
+          maxHeight: '100dvh',
           display: 'inline-flex',
           willChange: 'transform, scale',
           cursor: 'grab',

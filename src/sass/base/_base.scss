@@ -6,6 +6,12 @@
     user-select: none;
 }
 
+section {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
 input {
     &:focus {
         outline: none;
@@ -16,13 +22,17 @@ body {
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     width: 100dvw;
+    scroll-behavior: smooth;
 }
 
 .App {
     position: relative;
     display: flex;
     width: 100dvw;
-    overflow: hidden;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: scroll;
+    background-color: black;
 }
 
 .none {

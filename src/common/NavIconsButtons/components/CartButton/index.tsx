@@ -33,7 +33,7 @@ export const CartButton = () => {
             <img src={ArrowDown} alt='Arrow Down' className='arrow-down' />
 
 
-            <section ref={WindowRef} className={`cart-button-window-wrapper absolute  ${isActive ? `` : `none`}`} style={CartItems.length <= 0 ? { height: "fit-content", bottom: "-6rem" } : {}} >
+            <section ref={WindowRef} className={`cart-button-window-wrapper ${isActive ? `` : `none`}`} style={CartItems.length <= 0 ? { height: "fit-content", bottom: "-6rem" } : {}} >
                 <section className='cart-window-header'>
                     <Link className='' to={"/Profile"}>{t("cart_view_cart")}</Link>
                     <p >{`${CartItems.length || 0} ${t("cart_items")}`}</p>
