@@ -18,5 +18,12 @@
   "home_banner_to": "إلى",
   "home_banner_50%off": "50 % خصم",
   "home_banner_startingAt": "يبدأ من",
-  "home_banner_shop_now": "تسوق الأن"
+  "home_banner_shop_now": "تسوق الأن",
+  "products_Sort_by": "تسوق حسب",
+  "products_Sort_by_All": "الكل",
+  "products_Sort_by_Accessories": "الأكسسوارات",
+  "products_Sort_by_Electronics": "الألكترونيات",
+  "products_Sort_by_MEN": "الرجال",
+  "products_Sort_by_Shoes": "الأحذية",
+  "products_Sort_by_WOMAN": "النساء"
 }

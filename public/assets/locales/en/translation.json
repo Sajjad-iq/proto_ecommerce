@@ -18,5 +18,12 @@
   "home_banner_to": "to",
   "home_banner_50%off": "50 % OFF",
   "home_banner_startingAt": "STARTING AT",
-  "home_banner_shop_now": "SHOP NOW"
+  "home_banner_shop_now": "SHOP NOW",
+  "products_Sort_by": "SHOP BY",
+  "products_Sort_by_All": "ALL",
+  "products_Sort_by_Accessories": "ACCESSORIES",
+  "products_Sort_by_Electronics": "ELECTRONICS",
+  "products_Sort_by_MEN": "MEN",
+  "products_Sort_by_Shoes": "SHOES",
+  "products_Sort_by_WOMAN": "WOMAN"
 }

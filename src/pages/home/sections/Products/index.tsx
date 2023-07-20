@@ -6,8 +6,8 @@ export const Products = () => {
     const [isActive, setIsActive] = useState(false)
 
     return (
-        <section id="shop-now" className=' w-screen h-screen flex flex-col bg-white relative'>
-            <section>
+        <section id="shop-now" className=' h-screen flex flex-col bg-gray-100 relative'>
+            <section id='reverse-dir'>
                 <section className="bg-black rounded w-fit m-3 ">
                     <MenuButton isActive={isActive} onClick={() => setIsActive(!isActive)} />
                 </section>
